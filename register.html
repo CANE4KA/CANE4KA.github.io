@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylse.css"></linkrel>
+  <link type="image/x-icon" href="img/logo.ico" rel="shortcut icon">
+  <link type="Image/x-icon" href="img/logo.ico" rel="icon">
+  <title>Reg</title>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html"></a>
+    <nav class="nav">
+        <a href="register.html" class="nav-item">Регистрация</a>
+        <a href="authorization.html" class="nav-item">Авторизация</a>
+    </nav>
+  </header>
+
+  <form>
+    <div class="reg">
+      <h1>Register</h1>
+  
+      <input type="text" placeholder="Enter Login (любая цифра, буква(en), до 10 символов)" name="login" pattern="[\w]{1,10}" required>
+      <input type="text" placeholder="Enter Email" name="email" pattern="[a-zA-Zа-яА-ЯёЁ\-_0-9]{1,}@[a-zA-Z]{1,}.[a-zA-Z]{1,}" required>
+      <input type="password" placeholder="Enter Password (любая цифра, буква(rus), до 10 символов)" name="psw" pattern="[а-яА-ЯёЁ0-9]{1,10}" required>
+      <button type="submit" class="registerbtn">Log in</button>
+    </div>
+    <div class="container signin">
+      <p>Already have an account? <a class="href" href="authorization.html">Sign in</a>.</p>
+    </div>
+  </form>
+  <footer class="footer"  id="footer">
+    <table>
+      <tr>
+        <th>Контакты</th>
+      </tr>
+      <tr>
+        <td>Саша</td>
+        <td>ТГ - <a href="https://t.me/HUANANZHl">@HUANANZHl</a></td>
+      </tr>
+      <tr>
+        <td>Анатолий</td>
+        <td>ТГ - <a href="https://t.me/AnatoliyKarpovBasilevich">@AnatoliyKarpovBasilevich</a></td>
+      </tr>
+    </table>
+  </footer>
+</body>
+</html>
