@@ -17,6 +17,7 @@ a {
 }
 
 body {
+  height: 100%;
   margin: 0;
   padding: 0 15px;
   display: flex;
@@ -25,9 +26,19 @@ body {
   background: url(img/background.png);
 }
 
-html {
-  background: #FFF;
+.wrapper {
   min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  height: 100%;
+}
+
+html {
+  height: 100%;
+  background: #FFF;
   font-family: Helvetica;
   display: flex;
   flex-direction: column;
@@ -183,7 +194,6 @@ input[type=text]:focus, input[type=password]:focus {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 255px;
 }
 
 .footer {

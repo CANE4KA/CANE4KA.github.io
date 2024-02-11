@@ -33,7 +33,8 @@ body {
     display: flex;
     flex-direction: column;
     flex: auto;
-    background: url(img/background.png);
+    background: url(img/body_fon.jpg);
+    z-index: 1;
 }
 
 h1 {
@@ -96,6 +97,13 @@ img {
     transform: rotate(720deg);
 }
 
+.translate {
+    background: transparent;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 .nav {
     margin: -5px 0 0 -5px;
     display: flex;
@@ -144,14 +152,15 @@ img {
     transform: scale(0.9);
 }
 
-.main {
+.wrapper {
     width: 100%;
     min-width: 460px;
     max-width: 960px;
     margin: auto;
     flex: auto;
     box-sizing: border-box;
-    border: 2px dashed #000000;
+    z-index: 2;
+    background: url(img/background.png);
 }
 
 .box {
